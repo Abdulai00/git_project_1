@@ -27,6 +27,7 @@ def test_divide_by_zero():
     with pytest.raises(ValueError):
         divide(5, 0)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 def test_square_root():
     assert square_root(9) == 3
@@ -43,3 +44,10 @@ def test_validate_non_negative():
     assert validate_non_negative(-5) == False
 =======
 >>>>>>> f1deb16 (Initial commit: Calculator project structure)
+=======
+
+def test_power():
+    assert power(2, 3) == 8
+    assert power(5, 2) == 25
+    assert power(10, 0) == 0
+>>>>>>> 5976965 (Add power operation support)

@@ -28,3 +28,6 @@ def square_root(a):
         raise ValueError("Cannot calculate square root of negative number")
     return math.sqrt(a)
 
+def power(a, b):
+    """Raise a to the power of b."""
+    return a ** b

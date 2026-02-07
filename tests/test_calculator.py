@@ -50,3 +50,11 @@ def test_validate_positive():
     assert validate_positive(5) == True
     assert validate_positive(-5) == False
     assert validate_positive(0) == False
+
+def test_modulo():
+    assert modulo(10, 3) == 1
+    assert modulo(7, 2) == 1
+
+def test_modulo_by_zero():
+    with pytest.raises(ValueError):
+        modulo(5, 0)

@@ -1,8 +1,5 @@
 """Basic calculator operations."""
-<<<<<<< HEAD
 import math
-=======
->>>>>>> f1deb16 (Initial commit: Calculator project structure)
 
 def add(a, b):
     """Add two numbers."""

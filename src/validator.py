@@ -1,5 +1,5 @@
 """Module provides functions to check if input is  valid"""
-
+##Hello
 def validate_number(value):
     """Validate that value can be converted to a number."""
     try:
@@ -20,3 +20,6 @@ def validate_positive(n):
         return num > 0
     except (ValueError, TypeError):
         return False
+def is_positive(n):
+    """Check if a number is positive."""
+    return n > 0

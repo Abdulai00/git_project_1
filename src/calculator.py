@@ -1,4 +1,8 @@
 """Basic calculator operations."""
+<<<<<<< HEAD
+import math
+=======
+>>>>>>> f1deb16 (Initial commit: Calculator project structure)
 
 def add(a, b):
     """Add two numbers."""
@@ -17,3 +21,10 @@ def divide(a, b):
     if b == 0:
         raise ValueError("Cannot divide by zero")
     return a / b
+
+def square_root(a):
+    """Calculate square root of a."""
+    if a < 0:
+        raise ValueError("Cannot calculate square root of negative number")
+    return math.sqrt(a)
+

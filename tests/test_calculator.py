@@ -1,6 +1,11 @@
-"""Tests for calculator operations."""
+"""
+This module provides basic and advanced mathematical operations.
+
+Supported operations include addition, subtraction, multiplication, 
+division, and square root calculation with input validation.
+"""
 import pytest
-from src.calculator import add, subtract, multiply, divide
+from src.calculator import add, subtract, multiply, divide, modulo
 from src.validator import validate_range
 
 def test_add():

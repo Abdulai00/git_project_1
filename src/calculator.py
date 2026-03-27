@@ -21,12 +21,10 @@ def divide(a, b):
     if b == 0:
         raise ValueError("Cannot divide by zero")
     return a / b
-<<<<<<< HEAD
 
 def square_root(a):
     """Calculate square root of a."""
     if a < 0:
         raise ValueError("Cannot calculate square root of negative number")
     return math.sqrt(a)
-=======
->>>>>>> f1deb16 (Initial commit: Calculator project structure)
+

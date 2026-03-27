@@ -1,5 +1,13 @@
 """Input validation for calculator."""
 #Experiment: testing reflog recovery
+
+"""Input validation for calculator.
+This mode checks if the given values are number, valid operation, 
+are positive. 
+"""
+#This is layele expermential quote
+
+
 def validate_number(value):
     """Validate that value can be converted to a number."""
     try:

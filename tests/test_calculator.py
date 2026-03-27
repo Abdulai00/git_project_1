@@ -2,7 +2,9 @@
 import pytest
 from src.calculator import add, subtract, multiply, divide, square_root
 from src.validator import validate_non_negative
-from src.calculator import add, subtract, multiply, divide
+
+from src.calculator import add, subtract, multiply, divide,power
+
 from src.validator import validate_positive
 
 def test_add():
@@ -44,7 +46,7 @@ def test_validate_non_negative():
 def test_power():
     assert power(2, 3) == 8
     assert power(5, 2) == 25
-    assert power(10, 0) == 0
+    assert power(10, 0) == 1
 
 
 def test_validate_positive():

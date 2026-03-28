@@ -56,5 +56,6 @@ git push --force-with-lease origin feature/layele
 I learned that I can go back and edit my commit history. This allows me to have weird but understandable commit on my local repo and rewrite it for when I push it to digital repo. Allowing me to clear up my commit history to be more professional.
 
 
-
+## Checkpoint seven 
+I learned to look over my teamate code as some case it isn't going to work with mine. Therefore I have to go ahead and remove or integrate their code to prevent or resolve conflicts. 
 

@@ -1,11 +1,8 @@
 """Tests for calculator operations."""
 import pytest
-from src.calculator import add, subtract, multiply, divide, square_root
-from src.validator import validate_non_negative
+from src.calculator import add, subtract, multiply, divide, square_root,power
+from src.validator import validate_non_negative,validate_positive
 
-from src.calculator import add, subtract, multiply, divide,power
-
-from src.validator import validate_positive
 
 def test_add():
     assert add(2, 3) == 5

@@ -26,6 +26,9 @@ def validate_non_negative(n):
     try:
         num = float(n)
         return num >= 0
+    except (ValueError, TypeError):
+        return False
+    
 def validate_positive(n):
     """Validate that a number is positive."""
     try:

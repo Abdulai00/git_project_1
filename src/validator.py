@@ -21,27 +21,31 @@ def validate_operation(op):
     valid_ops = ['+', '-', '*', '/']
     return op in valid_ops
 
+"""Module for validating calculator inputs."""
+
 def validate_non_negative(n):
-    """Validate that a number is non-negative."""
-    try:
-        num = float(n)
-        return num >= 0
-    except (ValueError, TypeError):
-        return False
-    
+    """Check if a number is greater than or equal to zero."""
+    return n >= 0
+
 def validate_positive(n):
-    """Validate that a number is positive."""
-    try:
-        num = float(n)
-        return num > 0
+    """Check if a number is strictly greater than zero."""
+    # This matches your Checkpoint 3 helper function
+    return n > 0
 
 def validate_range(value, min_val=-1000, max_val=1000):
-    """Validate that number is within acceptable range."""
+    """
+    Ensure the value falls within the specified range.
+    Returns True if within range, False otherwise.
+    """
     try:
+        # Convert to float to ensure we can compare numeric values
         num = float(value)
         return min_val <= num <= max_val
     except (ValueError, TypeError):
+        # If the input isn't a number, it's technically not in the numeric range
         return False
+
+        
 # i think this commment is cool
 def is_positive(n):
        """Check if a number is positive."""

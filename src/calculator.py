@@ -1,26 +1,36 @@
 """Basic calculator operations."""
-<<<<<<< HEAD
 import math
-=======
->>>>>>> f1deb16 (Initial commit: Calculator project structure)
 
 def add(a, b):
     """Add two numbers."""
-    return a + b
+    print(f"[DEBUG] Adding {a} + {b}")
+    result = a + b
+    print(f"[DEBUG] Result: {result}")
+    return result
 
 def subtract(a, b):
     """Subtract b from a."""
-    return a - b
+    print(f"[DEBUG] Subtracting {a} - {b}")
+    result = a - b
+    print(f"[DEBUG] Result: {result}")
+    return result
 
 def multiply(a, b):
     """Multiply two numbers."""
-    return a * b
+    print(f"[DEBUG] Multiplying {a} * {b}")
+    result = a * b
+    print(f"[DEBUG] Result: {result}")
+    return result
 
 def divide(a, b):
     """Divide a by b."""
+    print(f"[DEBUG] Dividing {a} / {b}")
     if b == 0:
+        print(f"[DEBUG] Error: Division by zero!")
         raise ValueError("Cannot divide by zero")
-    return a / b
+    result = a / b
+    print(f"[DEBUG] Result: {result}")
+    return result
 
 def square_root(a):
     """Calculate square root of a."""
@@ -28,3 +38,9 @@ def square_root(a):
         raise ValueError("Cannot calculate square root of negative number")
     return math.sqrt(a)
 
+def power(a, b):
+    """Raise a to the power of b."""
+    print(f"[DEBUG] Power {a} ** {b}")
+    result = a ** b
+    print(f"[DEBUG] Result: {result}")
+    return result

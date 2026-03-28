@@ -1,5 +1,5 @@
 """Input validation for calculator."""
-
+#Experiment: testing reflog recovery
 def validate_number(value):
     """Validate that value can be converted to a number."""
     try:
@@ -16,3 +16,10 @@ def validate_operation(op):
 def is_positive(n):
     """Check if a number is positive."""
     return n > 0
+def validate_non_negative(n):
+    """Validate that a number is non-negative."""
+    try:
+        num = float(n)
+        return num >= 0
+    except (ValueError, TypeError):
+        return False

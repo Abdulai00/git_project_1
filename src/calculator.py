@@ -1,4 +1,6 @@
 """Basic calculator operations. blah"""
+import math
+
 
 def add(a, b):
     """Add two numbers."""
@@ -40,3 +42,11 @@ def modulo(a, b):
     result = a % b
     print(f"[DEBUG] Result: {result}")
     return result
+    return a / b
+
+def square_root(a):
+    """Calculate square root of a."""
+    if a < 0:
+        raise ValueError("Cannot calculate square root of negative number")
+    return math.sqrt(a)
+

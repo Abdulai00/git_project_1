@@ -1,5 +1,6 @@
-"""Basic calculator operations."""
 import math
+"""This file provides various calculation functions which can be used on integers and floats"""
+
 
 def add(a, b):
     """Add two numbers."""
